@@ -1,0 +1,24 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> DIBETES PREDICTION </h1><br>
+        
+        <form method="POST", action="{{url_for('predict_class')}}">
+           <b> Glucose :  <input type="text", name='glucose', placeholder="digit"> <br><br>
+            BloodPressure :  <input type="text", name='bp', placeholder="digit"> <br><br>
+            SkinThickness :  <input type="text", name='skin_thk', placeholder="digit"> <br><br>
+            Insulin :  <input type="text", name='insulin', placeholder="digit"> <br><br>
+            BMI :  <input type="text", name='bmi', placeholder="digit"> <br><br>
+            DiabetesPedigreeFunction :  <input type="text", name='dpf', placeholder="digit"> <br><br>
+            Age : <input type="text", name='age', placeholder="digit"> <br><br><br></b>
+            <input type="submit" , value='predict' >
+        </form>
+
+    
+        
+    </center>
+
+    </body>
+</html>
